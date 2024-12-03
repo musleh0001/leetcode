@@ -6,14 +6,14 @@ impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut map: HashMap<i32, i32> = HashMap::new();
 
-        for (i, &value) in nums.iter().enumerate() {
+        for (index, &value) in nums.iter().enumerate() {
             let complement = target - value;
 
             if map.contains_key(&complement) {
-                return vec![*map.get(&complement).unwrap() as i32, i as i32];
+                return vec![*map.get(&complement).unwrap() as i32, index as i32];
             }
 
-            map.insert(value as i32, i as i32);
+            map.insert(value as i32, index as i32);
         }
 
         vec![]
