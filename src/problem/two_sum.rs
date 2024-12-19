@@ -26,13 +26,13 @@ mod tests {
 
     #[test]
     fn two_sum_v1() {
-        let result = Solution::two_sum(vec![2,7,11,15], 9);
+        let result = Solution::two_sum(vec![2, 7, 11, 15], 9);
         assert_eq!(result, vec![0, 1]);
     }
 
     #[test]
     fn two_sum_v2() {
-        let result = Solution::two_sum(vec![3,2,4], 6);
+        let result = Solution::two_sum(vec![3, 2, 4], 6);
         assert_eq!(result, vec![1, 2]);
     }
 
