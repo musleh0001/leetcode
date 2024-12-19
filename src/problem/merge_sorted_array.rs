@@ -1,6 +1,5 @@
 pub struct Solution;
 
-#[allow(dead_code, unused_variables)]
 impl Solution {
     pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
         nums1.splice(m as usize.., nums2[..n as usize].to_vec());
