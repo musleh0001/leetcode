@@ -32,6 +32,22 @@ impl Solution {
 
         result_key
     }
+
+    pub fn majority_element_rusty(nums: Vec<i32>) -> i32 {
+        nums.iter()
+            .fold((0, 0), |(mut majority, mut count), &num| {
+                if count == 0 {
+                    majority = num
+                };
+                count = if majority == num {
+                    count + 1
+                } else {
+                    count - 1
+                };
+                (majority, count)
+            })
+            .0
+    }
 }
 
 #[cfg(test)]
@@ -40,19 +56,19 @@ mod tests {
 
     #[test]
     fn majority_element_v1() {
-        let result = Solution::majority_element(vec![3, 2, 3]);
+        let result = Solution::majority_element_rusty(vec![3, 2, 3]);
         assert_eq!(result, 3);
     }
 
     #[test]
     fn majority_element_v2() {
-        let result = Solution::majority_element(vec![2, 2, 1, 1, 1, 2, 2]);
+        let result = Solution::majority_element_rusty(vec![2, 2, 1, 1, 1, 2, 2]);
         assert_eq!(result, 2);
     }
 
     #[test]
     fn majority_element_v3() {
-        let result = Solution::majority_element(vec![2, 2, 1, 1, 5, 1, 2, 2]);
+        let result = Solution::majority_element_rusty(vec![2, 2, 1, 1, 5, 1, 2, 2]);
         assert_eq!(result, 2);
     }
 }
