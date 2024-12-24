@@ -1,5 +1,6 @@
 pub mod buy_and_sell_stock;
 pub mod buy_and_sell_stock_ii;
+pub mod h_index;
 pub mod jump_game;
 pub mod jump_game_ii;
 pub mod majority_element;
