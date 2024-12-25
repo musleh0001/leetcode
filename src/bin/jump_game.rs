@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn can_jump_greedy(nums: Vec<i32>) -> bool {
+    fn can_jump_greedy(nums: Vec<i32>) -> bool {
         let mut goal = nums.len() - 1;
 
         for (index, &num) in nums.iter().enumerate().rev() {
@@ -13,7 +13,7 @@ impl Solution {
         goal == 0
     }
 
-    pub fn can_jump_greedy_v2(nums: Vec<i32>) -> bool {
+    fn can_jump_greedy_v2(nums: Vec<i32>) -> bool {
         let mut farthest = 0;
 
         for index in 0..nums.len() {
@@ -26,7 +26,7 @@ impl Solution {
         true
     }
 
-    pub fn can_jump_dp(nums: Vec<i32>) -> bool {
+    fn can_jump_dp(nums: Vec<i32>) -> bool {
         let n = nums.len();
         let mut dp = vec![false; n];
         dp[0] = true;
@@ -42,6 +42,17 @@ impl Solution {
 
         dp[n - 1]
     }
+}
+
+pub fn main() {
+    let result = Solution::can_jump_dp(vec![2, 3, 1, 1, 4]);
+    println!("{result}");
+
+    let result = Solution::can_jump_greedy(vec![2, 3, 1, 1, 4]);
+    println!("{result}");
+
+    let result = Solution::can_jump_greedy_v2(vec![2, 3, 1, 1, 4]);
+    println!("{result}");
 }
 
 #[cfg(test)]

@@ -1,9 +1,9 @@
 use std::collections::HashMap;
 
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
+    fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
         let mut count_map = HashMap::new();
 
         nums.retain(|&num| {
@@ -19,7 +19,7 @@ impl Solution {
         nums.len() as i32
     }
 
-    pub fn remove_duplicates_v2(nums: &mut Vec<i32>) -> i32 {
+    fn remove_duplicates_v2(nums: &mut Vec<i32>) -> i32 {
         if nums.len() <= 2 {
             return nums.len() as i32;
         }
@@ -50,6 +50,14 @@ impl Solution {
 
         result => 5
     */
+}
+
+pub fn main() {
+    let result = Solution::remove_duplicates(&mut vec![1, 1, 1, 2, 2, 3]);
+    println!("{result}");
+
+    let result = Solution::remove_duplicates_v2(&mut vec![1, 1, 1, 2, 2, 3]);
+    println!("{result}");
 }
 
 #[cfg(test)]

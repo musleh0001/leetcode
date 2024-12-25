@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn h_index(citations: Vec<i32>) -> i32 {
+    fn h_index(citations: Vec<i32>) -> i32 {
         let mut citations = citations;
         let mut h = 0;
 
@@ -17,6 +17,11 @@ impl Solution {
 
         h
     }
+}
+
+pub fn main() {
+    let result = Solution::h_index(vec![3, 0, 6, 1, 5]);
+    println!("{result}");
 }
 
 #[cfg(test)]

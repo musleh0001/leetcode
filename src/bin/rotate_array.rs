@@ -1,10 +1,16 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn rotate(nums: &mut Vec<i32>, k: i32) {
+    fn rotate(nums: &mut Vec<i32>, k: i32) {
         let effective_k = k % nums.len() as i32;
         nums.rotate_right(effective_k as usize);
     }
+}
+
+fn main() {
+    let mut nums = vec![1, 2, 3, 4, 5, 6, 7];
+    Solution::rotate(&mut nums, 3);
+    println!("{nums:?}");
 }
 
 #[cfg(test)]

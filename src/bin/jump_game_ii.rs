@@ -1,7 +1,7 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn jump(nums: Vec<i32>) -> i32 {
+    fn jump(nums: Vec<i32>) -> i32 {
         let (mut result, mut left, mut right) = (0, 0, 0);
 
         while right < nums.len() - 1 {
@@ -18,6 +18,11 @@ impl Solution {
 
         result
     }
+}
+
+pub fn main() {
+    let result = Solution::jump(vec![3, 0, 6, 1, 5]);
+    println!("{result}");
 }
 
 #[cfg(test)]

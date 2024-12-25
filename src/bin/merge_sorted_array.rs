@@ -1,10 +1,18 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
-    pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
+    fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
         nums1.splice(m as usize.., nums2[..n as usize].to_vec());
         nums1.sort();
     }
+}
+
+pub fn main() {
+    let mut nums1 = vec![1, 2, 3, 0, 0, 0];
+    let mut nums2 = vec![2, 5, 6];
+    Solution::merge(&mut nums1, 3, &mut nums2, 3);
+
+    println!("{nums1:?}");
 }
 
 #[cfg(test)]

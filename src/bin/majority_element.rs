@@ -1,8 +1,8 @@
-pub struct Solution;
+struct Solution;
 
 impl Solution {
     // Boyer-Moore Voting Algorithm
-    pub fn majority_element(nums: Vec<i32>) -> i32 {
+    fn majority_element(nums: Vec<i32>) -> i32 {
         let (mut majority, mut count) = (0, 0);
 
         for &num in nums.iter() {
@@ -20,7 +20,7 @@ impl Solution {
         majority
     }
 
-    pub fn majority_element_v2(nums: Vec<i32>) -> i32 {
+    fn majority_element_v2(nums: Vec<i32>) -> i32 {
         let mut count = std::collections::HashMap::new();
         let (mut result_key, mut max_count) = (0, 0);
 
@@ -33,7 +33,7 @@ impl Solution {
         result_key
     }
 
-    pub fn majority_element_rusty(nums: Vec<i32>) -> i32 {
+    fn majority_element_rusty(nums: Vec<i32>) -> i32 {
         nums.iter()
             .fold((0, 0), |(mut majority, mut count), &num| {
                 if count == 0 {
@@ -48,6 +48,17 @@ impl Solution {
             })
             .0
     }
+}
+
+pub fn main() {
+    let result = Solution::majority_element(vec![3, 2, 3]);
+    println!("{result}");
+
+    let result = Solution::majority_element_v2(vec![3, 2, 3]);
+    println!("{result}");
+
+    let result = Solution::majority_element_rusty(vec![3, 2, 3]);
+    println!("{result}");
 }
 
 #[cfg(test)]
