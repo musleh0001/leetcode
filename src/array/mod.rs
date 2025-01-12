@@ -23,4 +23,5 @@ mod rotate_array;
 mod text_justification;
 mod trapping_rain_water;
 mod two_sum;
+mod valid_anagram;
 mod zigzag_conversion;
