@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -48,17 +49,6 @@ impl Solution {
             })
             .0
     }
-}
-
-pub fn main() {
-    let result = Solution::majority_element(vec![3, 2, 3]);
-    println!("{result}");
-
-    let result = Solution::majority_element_v2(vec![3, 2, 3]);
-    println!("{result}");
-
-    let result = Solution::majority_element_rusty(vec![3, 2, 3]);
-    println!("{result}");
 }
 
 #[cfg(test)]

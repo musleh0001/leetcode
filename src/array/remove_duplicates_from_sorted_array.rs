@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -5,11 +6,6 @@ impl Solution {
         nums.dedup();
         nums.len() as i32
     }
-}
-
-pub fn main() {
-    let result = Solution::remove_duplicates(&mut vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
-    println!("{result}");
 }
 
 #[cfg(test)]

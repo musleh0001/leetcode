@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -19,15 +20,6 @@ impl Solution {
 
         prefix
     }
-}
-
-fn main() {
-    let result = Solution::longest_common_prefix(vec![
-        String::from("flower"),
-        String::from("flow"),
-        String::from("flight"),
-    ]);
-    println!("{result}");
 }
 
 #[cfg(test)]

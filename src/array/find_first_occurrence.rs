@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -8,11 +9,6 @@ impl Solution {
             -1
         }
     }
-}
-
-fn main() {
-    let result = Solution::str_str(String::from("sadbutsad"), String::from("sad"));
-    println!("{result}");
 }
 
 #[cfg(test)]

@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -24,12 +25,6 @@ impl Solution {
 
         result
     }
-}
-
-fn main() {
-    let height = vec![0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
-    let result = Solution::trap(height);
-    println!("{result}");
 }
 
 #[cfg(test)]

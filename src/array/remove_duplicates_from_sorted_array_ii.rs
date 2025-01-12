@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::collections::HashMap;
 
 struct Solution;
@@ -50,14 +51,6 @@ impl Solution {
 
         result => 5
     */
-}
-
-pub fn main() {
-    let result = Solution::remove_duplicates(&mut vec![1, 1, 1, 2, 2, 3]);
-    println!("{result}");
-
-    let result = Solution::remove_duplicates_v2(&mut vec![1, 1, 1, 2, 2, 3]);
-    println!("{result}");
 }
 
 #[cfg(test)]

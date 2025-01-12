@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -17,11 +18,6 @@ impl Solution {
 
         max_profit
     }
-}
-
-pub fn main() {
-    let result = Solution::max_profit(vec![7, 1, 5, 3, 6, 4]);
-    println!("{result}");
 }
 
 #[cfg(test)]

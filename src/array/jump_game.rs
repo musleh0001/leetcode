@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -42,17 +43,6 @@ impl Solution {
 
         dp[n - 1]
     }
-}
-
-pub fn main() {
-    let result = Solution::can_jump_dp(vec![2, 3, 1, 1, 4]);
-    println!("{result}");
-
-    let result = Solution::can_jump_greedy(vec![2, 3, 1, 1, 4]);
-    println!("{result}");
-
-    let result = Solution::can_jump_greedy_v2(vec![2, 3, 1, 1, 4]);
-    println!("{result}");
 }
 
 #[cfg(test)]

@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -5,12 +6,6 @@ impl Solution {
         let effective_k = k % nums.len() as i32;
         nums.rotate_right(effective_k as usize);
     }
-}
-
-fn main() {
-    let mut nums = vec![1, 2, 3, 4, 5, 6, 7];
-    Solution::rotate(&mut nums, 3);
-    println!("{nums:?}");
 }
 
 #[cfg(test)]

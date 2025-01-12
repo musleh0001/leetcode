@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::collections::HashMap;
 use std::hash::BuildHasher;
 use std::hash::Hasher;
@@ -56,18 +57,6 @@ impl RandomizedSet {
             .try_into()
             .unwrap()
     }
-}
-
-pub fn main() {
-    let mut randomized_set = RandomizedSet::new();
-
-    println!("{}", randomized_set.insert(1)); // true
-    println!("{}", randomized_set.remove(2)); // false
-    println!("{}", randomized_set.insert(2)); // true
-    println!("{}", randomized_set.get_random()); // Randomly returns 1 or 2
-    println!("{}", randomized_set.remove(1)); // true
-    println!("{}", randomized_set.insert(2)); // false (already present)
-    println!("{}", randomized_set.get_random()); // Always returns 2
 }
 
 #[cfg(test)]

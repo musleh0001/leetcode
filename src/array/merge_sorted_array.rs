@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -5,14 +6,6 @@ impl Solution {
         nums1.splice(m as usize.., nums2[..n as usize].to_vec());
         nums1.sort();
     }
-}
-
-pub fn main() {
-    let mut nums1 = vec![1, 2, 3, 0, 0, 0];
-    let mut nums2 = vec![2, 5, 6];
-    Solution::merge(&mut nums1, 3, &mut nums2, 3);
-
-    println!("{nums1:?}");
 }
 
 #[cfg(test)]

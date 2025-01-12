@@ -1,14 +1,10 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
     fn reverse_words(s: String) -> String {
         s.split_whitespace().rev().collect::<Vec<&str>>().join(" ")
     }
-}
-
-fn main() {
-    let result = Solution::reverse_words(String::from("the sky is blue"));
-    println!("{result}");
 }
 
 #[cfg(test)]

@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -53,22 +54,6 @@ impl Solution {
 
         line
     }
-}
-
-fn main() {
-    let result = Solution::full_justify(
-        vec![
-            "This".to_string(),
-            "is".to_string(),
-            "an".to_string(),
-            "example".to_string(),
-            "of".to_string(),
-            "text".to_string(),
-            "justification.".to_string(),
-        ],
-        16,
-    );
-    println!("{result:?}");
 }
 
 #[cfg(test)]

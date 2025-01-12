@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -5,11 +6,6 @@ impl Solution {
         nums.retain(|&x| x != val);
         nums.len() as i32
     }
-}
-
-pub fn main() {
-    let result = Solution::remove_element(&mut vec![3, 2, 2, 3], 3);
-    println!("{result}");
 }
 
 #[cfg(test)]

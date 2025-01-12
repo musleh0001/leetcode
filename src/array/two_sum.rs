@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::collections::HashMap;
 
 struct Solution;
@@ -18,11 +19,6 @@ impl Solution {
 
         vec![]
     }
-}
-
-pub fn main() {
-    let result = Solution::two_sum(vec![2, 7, 11, 15], 9);
-    println!("{result:?}");
 }
 
 #[cfg(test)]

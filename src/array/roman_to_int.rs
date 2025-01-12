@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::collections::HashMap;
 
 struct Solution;
@@ -79,12 +80,6 @@ impl Solution {
 
         result
     }
-}
-
-fn main() {
-    let s = String::from("III");
-    let result = Solution::roman_to_int(s);
-    println!("{result}");
 }
 
 #[cfg(test)]

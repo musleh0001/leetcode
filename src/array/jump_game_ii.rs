@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -18,11 +19,6 @@ impl Solution {
 
         result
     }
-}
-
-pub fn main() {
-    let result = Solution::jump(vec![3, 0, 6, 1, 5]);
-    println!("{result}");
 }
 
 #[cfg(test)]

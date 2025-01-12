@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -20,11 +21,6 @@ impl Solution {
 
         start as i32
     }
-}
-
-pub fn main() {
-    let result = Solution::can_complete_circuit(vec![1, 2, 3, 4, 5], vec![3, 4, 5, 1, 2]);
-    println!("{result}");
 }
 
 #[cfg(test)]

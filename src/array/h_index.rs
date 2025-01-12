@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -17,11 +18,6 @@ impl Solution {
 
         h
     }
-}
-
-pub fn main() {
-    let result = Solution::h_index(vec![3, 0, 6, 1, 5]);
-    println!("{result}");
 }
 
 #[cfg(test)]

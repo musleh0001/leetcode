@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -18,11 +19,6 @@ impl Solution {
 
         result
     }
-}
-
-pub fn main() {
-    let result = Solution::product_except_self(vec![1, 2, 3, 4]);
-    println!("{result:?}");
 }
 
 #[cfg(test)]

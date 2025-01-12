@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -30,11 +31,6 @@ impl Solution {
 
         result
     }
-}
-
-fn main() {
-    let result = Solution::int_to_roman(3749);
-    println!("{result}");
 }
 
 #[cfg(test)]

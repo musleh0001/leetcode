@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -26,11 +27,6 @@ impl Solution {
 
         rows.concat()
     }
-}
-
-fn main() {
-    let result = Solution::convert(String::from("PAYPALISHIRING"), 3);
-    println!("{result}");
 }
 
 #[cfg(test)]

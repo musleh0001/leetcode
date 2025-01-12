@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -7,11 +8,6 @@ impl Solution {
             .last()
             .map_or(0, |word| word.len() as i32)
     }
-}
-
-pub fn main() {
-    let result = Solution::length_of_last_word(String::from("Hello World"));
-    println!("{result}");
 }
 
 #[cfg(test)]

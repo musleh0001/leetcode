@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
@@ -18,11 +19,6 @@ impl Solution {
 
         result.iter().sum()
     }
-}
-
-fn main() {
-    let result = Solution::candy(vec![1, 2, 87, 87, 87, 2, 1]);
-    println!("{result}");
 }
 
 #[cfg(test)]
