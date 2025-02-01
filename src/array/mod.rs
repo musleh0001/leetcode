@@ -4,6 +4,7 @@ mod candy;
 mod contains_duplicate;
 mod find_first_occurrence;
 mod gas_station;
+mod group_anagrams;
 mod h_index;
 mod int_to_roman;
 mod jump_game;
