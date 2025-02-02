@@ -2,6 +2,7 @@ mod buy_and_sell_stock;
 mod buy_and_sell_stock_ii;
 mod candy;
 mod contains_duplicate;
+mod encode_and_decode;
 mod find_first_occurrence;
 mod gas_station;
 mod group_anagrams;
