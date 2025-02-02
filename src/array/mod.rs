@@ -22,6 +22,7 @@ mod reverse_words_in_a_string;
 mod roman_to_int;
 mod rotate_array;
 mod text_justification;
+mod top_k_frequent_elements;
 mod trapping_rain_water;
 mod two_sum;
 mod valid_anagram;
