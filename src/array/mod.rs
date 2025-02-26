@@ -27,4 +27,5 @@ mod top_k_frequent_elements;
 mod trapping_rain_water;
 mod two_sum;
 mod valid_anagram;
+mod valid_sudoku;
 mod zigzag_conversion;

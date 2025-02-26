@@ -2,12 +2,7 @@
     <h1>Leetcode Problem Solution</h1>
 </div>
 
-## To run 
+## To Test 
 ```shell
->>> cargo run --bin <filename>
-```
-
-## To test problme
-```shell
->>> cargo test --bin <filename> -- --show-output
+>>> cargo test -- <folder_name>::<filename> --show-output
 ```
