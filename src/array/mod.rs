@@ -12,6 +12,7 @@ mod jump_game;
 mod jump_game_ii;
 mod length_of_last_word;
 mod longest_common_prefix;
+mod longest_consecutive_sequence;
 mod majority_element;
 mod merge_sorted_array;
 mod product_except_self;
