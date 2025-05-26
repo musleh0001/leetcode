@@ -88,6 +88,7 @@ fn vector_methods() {
     let mut v = vec![1, 2, 2, 3, 4, 2];
     v.retain(|&x| x % 2 == 0); // v = [2, 2, 4]
     println!("{v:?}");
+
     v.dedup(); // v = [2, 4]
     v.reverse(); // v = [4, 2]
     println!("{v:?}");
