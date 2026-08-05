@@ -1,6 +1,10 @@
 ---
 name: leetcode
 description: Scaffolds LeetCode Top Interview 150 problems or specific problem numbers/names with empty solution templates and 10+ pytest test cases.
+auto_approve:
+  - write_to_file
+  - replace_file_content
+  - create_directory
 ---
 
 # LeetCode Top Interview 150 Scaffolder
@@ -185,7 +189,7 @@ When the user runs `/leetcode` followed by `next`, a problem number, a problem n
   - `array_string`, `two_pointers`, `sliding_window`, `matrix`, `hashmap`, `intervals`, `stack`, `linked_list`, `binary_tree_general`, `binary_tree_bfs`, `binary_search_tree`, `graph_general`, `graph_bfs`, `trie`, `backtracking`, `divide_and_conquer`, `kadanes_algorithm`, `binary_search`, `heap`, `bit_manipulation`, `math`, `dp_1d`, `dp_multidimensional`.
 
 ### 3. Generate Problem File (`problems/<tag>/<problem_snake_case>.py`)
-- Include standard typing imports (`from typing import List, Optional, Dict, Tuple, Any`).
+- Include standard typing imports (`from typing import List, Optional, Dict, Tuple, Any`) Only add the necessary one.
 - Include `class Solution:` definition and signature.
 - **Body MUST strictly be `pass` (no solution logic).**
 
