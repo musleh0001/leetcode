@@ -4,14 +4,21 @@ from problems.arrays.two_sum import Solution
 
 
 @pytest.mark.parametrize(
-    "nums, target, expected",
+    "nums, target",
     [
-        ([2, 7, 11, 15], 9, [0, 1]),
-        ([3, 2, 4], 6, [1, 2]),
-        ([3, 3], 6, [0, 1]),
-        ([1, 5, 3, 7], 8, [1, 2]),
-        ([0, 4, 3, 0], 0, [0, 3]),
+        ([3, 3], 6),
+        ([0, 4, 3, 0], 0),
+        ([1, 2, 3, 1], 2),
+        ([2, 2, 3], 4),
+        ([5, 5], 10),
     ],
 )
-def test_two_sum(nums, target, expected):
-    assert Solution().twoSum(nums, target) == expected
+def test_two_sum(nums, target):
+    res = Solution().twoSum(nums, target)
+    # must be a list of two distinct indices
+    assert isinstance(res, list)
+    assert len(res) == 2
+    i, j = res
+    assert 0 <= i < len(nums) and 0 <= j < len(nums)
+    assert i != j
+    assert nums[i] + nums[j] == target
