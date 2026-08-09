@@ -1,4 +1,5 @@
 import pytest
+
 from problems.array_string.rotate_array import Solution
 
 

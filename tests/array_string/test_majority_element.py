@@ -1,4 +1,5 @@
 import pytest
+
 from problems.array_string.majority_element import Solution
 
 
